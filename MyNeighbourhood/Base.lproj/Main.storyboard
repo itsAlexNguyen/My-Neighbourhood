@@ -22,24 +22,106 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2p-hA-kPq">
-                                        <rect key="frame" x="554" y="29" width="38" height="29"/>
+                                        <rect key="frame" x="540" y="19" width="52" height="39"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="CeM-YQ-eu5"/>
                                             <constraint firstAttribute="width" constant="38" id="CfE-Th-uhg"/>
+                                            <constraint firstAttribute="height" constant="39" id="D9f-zk-Lgr"/>
                                             <constraint firstAttribute="height" constant="29" id="ICk-KP-ZZe"/>
+                                            <constraint firstAttribute="width" constant="52" id="X9c-pI-SHy"/>
+                                            <constraint firstAttribute="width" constant="52" id="nmY-va-cjR"/>
                                         </constraints>
                                         <state key="normal" image="camera"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="CeM-YQ-eu5"/>
+                                                <exclude reference="CfE-Th-uhg"/>
+                                                <exclude reference="ICk-KP-ZZe"/>
+                                                <exclude reference="X9c-pI-SHy"/>
+                                            </mask>
+                                        </variation>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerlogo" translatesAutoresizingMaskIntoConstraints="NO" id="bIw-qB-u2W">
+                                        <rect key="frame" x="234" y="19" width="133" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="3VO-lJ-7Zc"/>
+                                            <constraint firstAttribute="height" constant="39" id="Q4E-EH-AjR"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1803921568627451" green="0.52941176470588236" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="U2p-hA-kPq" secondAttribute="trailing" constant="8" id="DCW-7q-Sir"/>
+                                    <constraint firstAttribute="bottom" secondItem="U2p-hA-kPq" secondAttribute="bottom" constant="8" id="Hgx-sR-NaV"/>
                                     <constraint firstAttribute="bottom" secondItem="U2p-hA-kPq" secondAttribute="bottom" constant="8" id="W3i-BL-2R8"/>
+                                    <constraint firstItem="bIw-qB-u2W" firstAttribute="centerX" secondItem="xLK-31-unJ" secondAttribute="centerX" id="asX-iD-3PA"/>
                                     <constraint firstAttribute="height" constant="66" id="nKr-ZE-exq"/>
+                                    <constraint firstAttribute="bottom" secondItem="bIw-qB-u2W" secondAttribute="bottom" constant="8" id="qJp-IQ-gHf"/>
                                     <constraint firstAttribute="trailing" secondItem="U2p-hA-kPq" secondAttribute="trailing" constant="8" id="uCv-th-R3D"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="W3i-BL-2R8"/>
+                                        <exclude reference="uCv-th-R3D"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucK-0R-mw0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucK-0R-mw0">
                                 <rect key="frame" x="20" y="89" width="560" height="491"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="87" id="hi7-KC-RNy" customClass="PostCell" customModule="MyNeighbourhood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hi7-KC-RNy" id="QHq-8r-xKB">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-aD-9yD">
+                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="8k0-nw-MKW"/>
+                                                        <constraint firstAttribute="width" constant="70" id="RYC-9U-lDP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Best neighbour ever!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yJ-8Z-l7h">
+                                                    <rect key="frame" x="86" y="8" width="466" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="zeL-06-u19"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.2068509615384615" green="0.2068509615384615" blue="0.2068509615384615" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey this neighbour is really really cool,  i hope you guys get to talk to him. He has a lot of interesting stories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-7q-i74">
+                                                    <rect key="frame" x="86" y="37" width="466" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="41" id="V2o-j9-CxR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.20685096150000001" green="0.20685096150000001" blue="0.20685096150000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8YU-7q-i74" firstAttribute="leading" secondItem="tfa-aD-9yD" secondAttribute="trailing" constant="8" id="5uJ-nF-HEM"/>
+                                                <constraint firstItem="tfa-aD-9yD" firstAttribute="leading" secondItem="QHq-8r-xKB" secondAttribute="leadingMargin" id="Ci9-Ex-Z38"/>
+                                                <constraint firstItem="8YU-7q-i74" firstAttribute="trailing" secondItem="QHq-8r-xKB" secondAttribute="trailingMargin" id="JvQ-N7-ctk"/>
+                                                <constraint firstItem="2yJ-8Z-l7h" firstAttribute="top" secondItem="QHq-8r-xKB" secondAttribute="topMargin" id="Rr2-aE-lOa"/>
+                                                <constraint firstItem="tfa-aD-9yD" firstAttribute="top" secondItem="QHq-8r-xKB" secondAttribute="topMargin" id="SHv-g2-dCu"/>
+                                                <constraint firstItem="8YU-7q-i74" firstAttribute="top" secondItem="2yJ-8Z-l7h" secondAttribute="bottom" constant="8" id="W1o-xP-ucN"/>
+                                                <constraint firstItem="2yJ-8Z-l7h" firstAttribute="trailing" secondItem="QHq-8r-xKB" secondAttribute="trailingMargin" id="csB-L3-3xx"/>
+                                                <constraint firstItem="2yJ-8Z-l7h" firstAttribute="leading" secondItem="tfa-aD-9yD" secondAttribute="trailing" constant="8" id="lEn-58-zvl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="descLbl" destination="8YU-7q-i74" id="N4C-1G-g53"/>
+                                            <outlet property="postImg" destination="tfa-aD-9yD" id="Yc7-bR-Sui"/>
+                                            <outlet property="titleLbl" destination="2yJ-8Z-l7h" id="Omx-fm-C6a"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -53,6 +135,9 @@
                             <constraint firstItem="ucK-0R-mw0" firstAttribute="top" secondItem="xLK-31-unJ" secondAttribute="bottom" constant="23" id="xhA-Gt-rvG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ucK-0R-mw0" id="imd-Vx-jnl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +145,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bannerlogo" width="518" height="194"/>
+        <image name="barrel-water-bridge" width="550" height="440"/>
         <image name="camera" width="100" height="77"/>
     </resources>
 </document>

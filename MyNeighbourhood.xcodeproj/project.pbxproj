@@ -13,6 +13,7 @@
 		46C4C0911C4824E200318374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C4C0901C4824E200318374 /* Assets.xcassets */; };
 		46C4C0941C4824E200318374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C4C0921C4824E200318374 /* LaunchScreen.storyboard */; };
 		46C4C09E1C4825AE00318374 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4C09D1C4825AE00318374 /* Post.swift */; };
+		46C4C0A31C48446E00318374 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4C0A21C48446E00318374 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		46C4C0931C4824E200318374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46C4C0951C4824E200318374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C4C09D1C4825AE00318374 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		46C4C0A21C48446E00318374 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		46C4C07D1C4824E200318374 = {
 			isa = PBXGroup;
 			children = (
+				46C4C09F1C4843F000318374 /* View */,
 				46C4C09B1C48258B00318374 /* Model */,
 				46C4C0881C4824E200318374 /* MyNeighbourhood */,
 				46C4C0871C4824E200318374 /* Products */,
@@ -73,6 +76,14 @@
 				46C4C09D1C4825AE00318374 /* Post.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		46C4C09F1C4843F000318374 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46C4C0A21C48446E00318374 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				46C4C09E1C4825AE00318374 /* Post.swift in Sources */,
 				46C4C08C1C4824E200318374 /* ViewController.swift in Sources */,
 				46C4C08A1C4824E200318374 /* AppDelegate.swift in Sources */,
+				46C4C0A31C48446E00318374 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
